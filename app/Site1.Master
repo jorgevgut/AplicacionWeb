@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="appWeb1.app.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Aplicacion Web</title>
+    <link href="Styles/Main.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Abel|Satisfy' rel='stylesheet' type='text/css' />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+     <div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header">
+			<div id="logo">
+				<h1><a href="#">Aplicacion web</a></h1>
+			</div>
+			<div id="menu">
+				<ul>
+			            <li><a href="Default.aspx">Inicio</a></li>
+                        <li><a href="usuarios.aspx">Usuarios</a></li>
+                        <li><a href="acercade.aspx">Acerca de</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="banner"></div>
+	<div id="page-wrapper">
+		<div id="page">
+			<div id="wide-content">
+				        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+			</div>
+		</div>
+	</div>
+	<div id="recent-news">
+		
+	</div>
+	<div id="footer-wrapper">
+		<div id="footer-content">
+			
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<p>Copyright (c) 2012 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org">FCT</a>. Photos by <a href="http://fotogrph.com/">Fotogrph</a>.</p>
+</div>
+
+    </form>
+</body>
+</html>
